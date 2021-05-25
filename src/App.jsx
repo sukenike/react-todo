@@ -18,6 +18,10 @@ export const App = () => {
     setTodoText("");
   };
 
+  const onClickDelete = () => {
+    console.log("削除");
+  };
+
   return (
     <>
       <div className="input-area">
@@ -36,7 +40,7 @@ export const App = () => {
               <div key={todo} className="list-row">
                 <li>{todo}</li>
                 <button>完了</button>
-                <button>削除</button>
+                <button onClick={onClickDelete}>削除</button>
               </div>
             );
           })}
