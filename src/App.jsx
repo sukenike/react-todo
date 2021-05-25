@@ -42,7 +42,11 @@ export const App = () => {
 
   return (
     <>
-      <InputTodo />
+      <InputTodo
+        todoText={todoText}
+        onChange={onChangeTodoText}
+        onClick={onClickAdd}
+      />
       <div className="incomplete-area">
         <p className="title">未完了のTOOD</p>
         <ul>
