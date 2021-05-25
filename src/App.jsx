@@ -19,7 +19,9 @@ export const App = () => {
   };
 
   const onClickDelete = (index) => {
-    console.log(index);
+    const newTodos = [...incompleteTodos];
+    newTodos.splice(index, 1);
+    setIncompleteTodos(newTodos);
   };
 
   return (
